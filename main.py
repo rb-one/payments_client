@@ -7,7 +7,7 @@ from application.data_store import DataStore
 
 if __name__ == "__main__":
     # Crear una instancia de DataStore
-    data_store = DataStore(file_name="payment_details.json")
+    data_store = DataStore(file_name="../payments.json")
 
     # Ejecutar comandos
     payment_cmd = AddPaymentCommand(payment_method="credit", amount=150.0)
