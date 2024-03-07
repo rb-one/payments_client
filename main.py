@@ -13,7 +13,6 @@ if __name__ == "__main__":
     payment_cmd = AddPaymentCommand(payment_method="credit", amount=150.0)
     payment_cmd.execute()
 
-    # import pdb; pdb.set_trace()
     add_discount_command = AddDiscountCommand(
         payment=payment_cmd.payment,
         reason="best_client",
